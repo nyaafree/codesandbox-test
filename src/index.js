@@ -33,6 +33,35 @@ const [name2, age2] = profile2;
 const message5 = `私の名前は${name2}で年齢は${age2}です`;
 console.log(message5);
 
+/**
+ * スプレッド構文
+ */
+
+// 配列の展開
+const arr1 = [1, 2];
+console.log(...arr1);
+
+const sumFunc = (num1, num2) => console.log(num1 + num2);
+sumFunc(...arr1);
+
+// まとめる
+const arr2 = [1, 2, 3, 4, 5];
+// 分割代入との合わせ技
+const [num1, num2, ...num3] = arr2;
+console.log(num1);
+console.log(num2);
+console.log(num3);
+
+// 配列のコピー・結合
+const arr4 = [10, 20];
+const arr5 = [30, 40];
+
+const arr6 = [...arr4];
+console.log(arr6);
+
+const arr7 = [...arr4, ...arr5];
+console.log(arr7);
+
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
 <div>
