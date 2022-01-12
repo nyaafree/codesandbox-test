@@ -89,6 +89,23 @@ const number_2 = null;
 const fee2 = number_2 && "何か設定された";
 console.log(fee2);
 
+/**
+ * mapやfilterを使った配列の処理
+ */
+
+const nameArr = ["田中", "山田", "竹内"];
+const nameArr2 = nameArr.map((name) => name);
+console.log(nameArr2);
+
+nameArr2.map((name, index) => console.log(name, index));
+
+const numArr = [1, 2, 3, 4, 5];
+const oddArr = numArr.filter((num) => num % 2 === 1);
+console.log(oddArr);
+
+const newNameArr = nameArr.map((name) => name + "さん");
+console.log(newNameArr);
+
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
 <div>
