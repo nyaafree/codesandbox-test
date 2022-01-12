@@ -1,4 +1,7 @@
 import "./styles.css";
+let age = 32;
+const text = `私の年齢は${age}歳です`;
+console.log(text);
 
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
