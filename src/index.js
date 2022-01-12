@@ -75,6 +75,20 @@ const formattedNum =
     : "数値を入力してください";
 console.log(formattedNum);
 
+/**
+ * 論理演算子復習
+ */
+
+// || は左側がfalseなら右側を返す
+const num = null;
+const fee = num || "金額未設定です";
+console.log(fee);
+
+// &&は左側がtrueなら右側を返す
+const number_2 = null;
+const fee2 = number_2 && "何か設定された";
+console.log(fee2);
+
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
 <div>
