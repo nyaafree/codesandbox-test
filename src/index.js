@@ -62,6 +62,19 @@ console.log(arr6);
 const arr7 = [...arr4, ...arr5];
 console.log(arr7);
 
+/**
+ * 三項演算子
+ */
+
+const num_val = "a";
+console.log(num_val.toLocaleString());
+
+const formattedNum =
+  typeof num_val === "number"
+    ? num_val.toLocaleString()
+    : "数値を入力してください";
+console.log(formattedNum);
+
 document.getElementById("app").innerHTML = `
 <h1>Hello Vanilla!</h1>
 <div>
